@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Généré par Microsoft Visio, SVG Export hf.svg Page 1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="7.43445in" height="3.38812in" viewBox="0 0 535.28 243.945" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st20">
+	<style type="text/css">
+	<![CDATA[
+		.st1 {stroke:#000000;stroke-dasharray:3,6;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st2 {fill:#008000;stroke:#00ff00;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:#800000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75;visibility:hidden}
+		.st5 {fill:#ff00ff;fill-opacity:0;stroke:#000000;stroke-opacity:0;stroke-width:0.72}
+		.st6 {fill:#668ace;stroke:#ffffff;stroke-width:0.72}
+		.st7 {fill:url(#grad0-25);stroke:none;stroke-width:0.72}
+		.st8 {fill:url(#grad7-32);stroke:#000000;stroke-width:0.24}
+		.st9 {fill:url(#grad3-36);stroke:#000000;stroke-width:0.12}
+		.st10 {fill:url(#grad0-25);stroke:#ffffff;stroke-width:0.24}
+		.st11 {fill:url(#grad10-47);stroke:#000000;stroke-width:0.72}
+		.st12 {stroke:#c8c8c8;stroke-width:1.5}
+		.st13 {fill:url(#grad10-47);stroke:#000000;stroke-width:0.24}
+		.st14 {stroke:#70ad47;stroke-linecap:round;stroke-linejoin:round;stroke-width:6}
+		.st15 {marker-end:url(#mrkr5-69);marker-start:url(#mrkr5-67);stroke:#4672c4;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st16 {fill:#4672c4;fill-opacity:1;stroke:#4672c4;stroke-opacity:1;stroke-width:0.28409090909091}
+		.st17 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st18 {fill:#3c63ac;font-family:Calibri;font-size:1.00001em}
+		.st19 {font-size:1em;font-style:italic}
+		.st20 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<linearGradient id="grad0-25" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(180 0.5 0.5)">
+			<stop offset="0.01" stop-color="#3e3e3e" stop-opacity="1"/>
+			<stop offset="0.5" stop-color="#365fa9" stop-opacity="1"/>
+			<stop offset="1" stop-color="#3e3e3e" stop-opacity="1"/>
+		</linearGradient>
+		<radialGradient id="grad7-32" cx="0" cy="0" r="1.4">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c0c0c0" stop-opacity="1"/>
+		</radialGradient>
+		<radialGradient id="grad3-36" cx="0.5" cy="0.5" r="0.73">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#008000" stop-opacity="1"/>
+		</radialGradient>
+		<pattern id="grad10-47" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0.5 0.5 L 0 0 L 0 1 z" style="fill:url(#grad0-48)"/>
+			<path d="M 0.5 0.5 L 1 0 L 1 1 z" style="fill:url(#grad0-49)"/>
+			<path d="M 0.5 0.5 L 0 0 L 1 0 z" style="fill:url(#grad0-50)"/>
+			<path d="M 0.5 0.5 L 0 1 L 1 1 z" style="fill:url(#grad0-51)"/>
+		</pattern>
+		<linearGradient id="grad0-48" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(180 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c6d1e3" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-49" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(360 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c6d1e3" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-50" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(270 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c6d1e3" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-51" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c6d1e3" stop-opacity="1"/>
+		</linearGradient>
+	</defs>
+	<defs id="Markers">
+		<g id="lend5">
+			<path d="M 2 1 L 0 0 L 1.98117 -0.993387 C 1.67173 -0.364515 1.67301 0.372641 1.98465 1.00043 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr5-67" class="st16" refX="5.8" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend5" transform="scale(3.52) "/>
+		</marker>
+		<marker id="mrkr5-69" class="st16" refX="-6.16" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend5" transform="scale(-3.52,-3.52) "/>
+		</marker>
+	</defs>
+	<g>
+		<title>Page 1</title>
+		<g id="shape2-1" transform="translate(459.543,1.5) rotate(90)">
+			<title>Feuille.2</title>
+			<path d="M0 243.94 L184.25 243.94" class="st1"/>
+		</g>
+		<g id="shape3-4" transform="translate(629.622,29.8465) rotate(90)">
+			<title>Feuille.3</title>
+			<path d="M0 243.94 L212.6 243.94" class="st1"/>
+		</g>
+		<g id="shape5-7" transform="translate(289.465,1.50002) rotate(90)">
+			<title>Feuille.5</title>
+			<path d="M0 243.94 L240.94 243.94" class="st1"/>
+		</g>
+		<g id="group6-10" transform="translate(362.333,-54.0243)">
+			<title>Arbre</title>
+			<g id="shape7-11" transform="translate(0,-28.013)">
+				<title>Feuille.7</title>
+				<path d="M23.34 178.58 L3.89 197.26 L11.67 197.26 L3.89 215.93 L11.67 215.93 L3.89 234.61 L10.7 234.61 L0 243.94
+							 L46.69 243.94 L36.96 234.61 L42.8 234.61 L35.02 215.93 L42.8 215.93 L35.02 197.26 L42.8 197.26 L23.34
+							 178.58 Z" class="st2"/>
+			</g>
+			<g id="shape8-13" transform="translate(18.4808,2.84217E-14)">
+				<title>Feuille.8</title>
+				<path d="M0 241.14 L0 215.93 L9.73 215.93 L9.73 241.14 L4.86 243.94 L0 241.14 Z" class="st3"/>
+			</g>
+			<g id="shape9-15" transform="translate(-6.65586,14.4)">
+				<title>Feuille.9</title>
+				<rect x="0" y="229.545" width="60" height="14.4" class="st4"/>
+			</g>
+		</g>
+		<g id="group10-17" transform="translate(59.6929,-83.7047) scale(-1,1)">
+			<title>Appareil photo numérique</title>
+			<g id="shape11-18">
+				<title>Feuille.11</title>
+				<path d="M28.35 220.7 A14.8818 13.1541 177.61 0 1 24.94 223.54 A14.8732 13.1465 -2.5 0 0 28.35 220.7 ZM19.84 243.94
+							 A11.6443 10.2925 -2.19 0 0 28.35 239.13 L28.35 220.7 A107.308 94.8503 -177.86 0 0 9.92 209.93 A22.5917
+							 19.9689 -3.66 0 0 -0 215.6 L0 234.02 A8.6038 7.60494 -8.1 0 0 6.24 236.15 L19.84 243.94 Z" class="st5"/>
+			</g>
+			<g id="shape12-20" transform="translate(0,-18.4252)">
+				<title>Feuille.12</title>
+				<path d="M19.84 243.94 A14.8732 13.1465 -2.5 0 0 28.35 239.13 A107.308 94.8503 -177.86 0 0 9.92 228.35 A22.5917 19.9689
+							 -3.66 0 0 0 234.02 A5.69741 5.03597 -9.83 0 0 6.24 236.01 L19.84 243.94 Z" class="st6"/>
+			</g>
+			<g id="shape13-22" transform="translate(19.8425,-1.42109E-13)">
+				<title>Feuille.13</title>
+				<path d="M0 243.94 A11.6443 10.2925 -2.19 0 0 8.5 239.13 L8.5 220.7 A14.8818 13.1541 177.61 0 1 -0 225.52 L0 243.94
+							 Z" class="st7"/>
+			</g>
+			<g id="shape14-26" transform="translate(0,-7.78829)">
+				<title>Feuille.14</title>
+				<path d="M-0 241.81 A8.6038 7.60494 -8.1 0 0 6.24 243.94 L6.24 225.37 A5.90581 5.22017 170.23 0 1 -0 223.39 L0 241.81
+							 Z" class="st7"/>
+			</g>
+			<g id="shape15-29" transform="translate(6.23622,2.84217E-14)">
+				<title>Feuille.15</title>
+				<path d="M0 236.15 L13.61 243.94 L13.61 225.52 L0 217.58 L0 236.15 Z" class="st8"/>
+			</g>
+			<g id="shape16-33" transform="translate(-109.185,424.691) rotate(-150)">
+				<title>Feuille.16</title>
+				<path d="M3.97 242.64 A1.98752 1.15982 -3.93 1 1 0 242.92 A1.98752 1.15982 -3.93 1 1 3.97 242.64 Z" class="st9"/>
+			</g>
+			<g id="group17-37" transform="translate(5.66929,-7.79821)">
+				<title>Feuille.17</title>
+				<g id="shape18-38" transform="translate(-0.080543,0.0451398)">
+					<title>Feuille.18</title>
+					<path d="M9.04 242.31 A6.36348 3.97115 -120 1 0 2.66 231.3 L0 232.88 A8.72958 8.72958 0 0 1 6.29 243.94 L9.04
+								 242.31 Z" class="st10"/>
+				</g>
+				<g id="shape19-41" transform="translate(-119.193,34.7058) rotate(-30)">
+					<title>Feuille.19</title>
+					<ellipse cx="3.97115" cy="237.581" rx="3.97115" ry="6.36348" class="st8"/>
+				</g>
+				<g id="shape20-44" transform="translate(-118.914,32.6181) rotate(-30)">
+					<title>Feuille.20</title>
+					<ellipse cx="2.47503" cy="239.197" rx="2.47503" ry="4.74814" class="st11"/>
+				</g>
+			</g>
+			<g id="shape21-52" transform="translate(0,-0.10666)">
+				<title>Feuille.21</title>
+				<path d="M0 215.71 L0 234.13 A8.83966 8.83966 -180 0 0 6.24 236.26 L19.84 244.05 A11.9802 11.9802 -180 0 0 28.35
+							 239.23 L28.35 220.81 L9.92 210.04 A23.557 23.557 -180 0 0 0 215.71" class="st12"/>
+			</g>
+			<g id="shape22-55" transform="translate(15.3071,-14.7402)">
+				<title>Feuille.22</title>
+				<path d="M0 241.68 L3.97 243.94 L3.97 240.83 L0 238.56 L0 241.68 Z" class="st13"/>
+			</g>
+		</g>
+		<g id="shape23-58" transform="translate(3,-58.1929)">
+			<title>Feuille.23</title>
+			<path d="M0 243.94 L527.33 243.94" class="st14"/>
+		</g>
+		<g id="shape24-61" transform="translate(44.9311,472.217) scale(1,-1)">
+			<title>Feuille.24</title>
+			<desc>Distance de mise au point (DS)</desc>
+			<path d="M5.8 243.94 L6.16 243.94 L334.59 243.94" class="st15"/>
+			<rect x="96.0084" y="236.745" width="148.73" height="14.4001" class="st17"/>
+			<text x="96.01" y="-240.34" transform="scale(1,-1)" class="st18">Distance de mise au point (DS)</text>		</g>
+		<g id="shape25-72" transform="translate(45.5197,302.138) scale(1,-1)">
+			<title>Feuille.25</title>
+			<desc>Limite Antérieure (A)</desc>
+			<path d="M5.8 243.94 L6.16 243.94 L163.92 243.94" class="st15"/>
+			<rect x="33.8486" y="236.745" width="102.382" height="14.4001" class="st17"/>
+			<text x="33.85" y="-240.34" transform="scale(1,-1)" class="st18">Limite Antérieure (A)</text>		</g>
+		<g id="shape27-81" transform="translate(215.598,302.138) rotate(9.78603E-07) scale(1,-1)">
+			<title>Feuille.27</title>
+			<desc>[ zna ]</desc>
+			<path d="M5.8 243.94 L6.16 243.94 L163.92 243.94" class="st15"/>
+			<rect x="70.1071" y="236.745" width="29.865" height="14.4001" class="st17"/>
+			<text x="70.11" y="-240.34" transform="scale(1,-1)" class="st18">[ <tspan class="st19">zna</tspan> ]</text>		</g>
+		<g id="shape28-91" transform="translate(385.677,302.138) scale(1,-1)">
+			<title>Feuille.28</title>
+			<desc>[ znp ]</desc>
+			<path d="M5.8 243.94 L6.16 243.94 L135.57 243.94" class="st15"/>
+			<rect x="54.5773" y="236.745" width="32.5778" height="14.4001" class="st17"/>
+			<text x="57.29" y="-240.34" transform="scale(1,-1)" class="st18">[ <tspan class="st19">znp</tspan> ]</text>		</g>
+		<g id="shape29-101" transform="translate(215.598,259.618) scale(1,-1)">
+			<title>Feuille.29</title>
+			<desc>[ zn ]</desc>
+			<path d="M5.8 243.94 L6.16 243.94 L305.65 243.94" class="st15"/>
+			<rect x="142.702" y="236.745" width="26.4078" height="14.4001" class="st17"/>
+			<text x="145.41" y="-240.34" transform="scale(1,-1)" class="st18">[ <tspan class="st19">zn</tspan> ]</text>		</g>
+		<g id="shape34-111" transform="translate(45.5197,458.043) scale(1,-1)">
+			<title>Feuille.34</title>
+			<desc>Hyperfocale</desc>
+			<path d="M5.8 243.94 L6.16 243.94 L334.59 243.94" class="st15"/>
+			<rect x="140.921" y="236.745" width="58.9048" height="14.4001" class="st17"/>
+			<text x="140.92" y="-240.34" transform="scale(1,-1)" class="st18">Hyperfocale</text>		</g>
+	</g>
+</svg>
