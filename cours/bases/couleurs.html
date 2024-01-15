@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<!-- ---------------------------------------------------------------------- -->
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../css/w3.css">
+		<link rel="stylesheet" type="text/css" href="../../css/default.css" media="all">
+		<title>Les Couleurs</title>
+	</head>
+	<!-- ---------------------------------------------------------------------- -->
+	<body>
+		<div class="sidenav">
+			<p class="w3-center w3-text-white"><b>Les Bases</b></p>
+			<hr>
+			<p class="w3-center w3-text-white">Les couleurs</p>
+			<hr>
+			<input id="mySearch" onkeyup="myFunctionH2()" placeholder="Chercher..." title="Commencer à taper et choisissez" type="text">
+			<ul id="myMenu"> </ul>
+			<hr>
+		</div>
+		<!-- ---------------------------------------------------------------------- -->
+		<div class="main">
+			<!-- ---------------------------------------------------------------------- -->
+			<header>
+				<h1>Atelier Photo Vidéo</h1>
+				<nav>
+				<script src="../../js/menu3.js"></script>
+				</nav>
+				<!-- ---------------------------------------------------------------------- -->
+				<!-- Chemin de fer -->
+				<!-- ---------------------------------------------------------------------- -->
+				<hr class="hr66">
+				<p><a href="../../index.html">Accueil</a> &rarr; <a href="../cours.html">Cours</a> &rarr; <a href="bases.html">Les Bases</a> &rarr; Les couleurs</p>
+				<hr class="hr66">
+				<p class="w3-center w3-wide"> Principaux élément pour comprendre la couleur. </p>
+				<hr>
+			</header>
+			<!-- ---------------------------------------------------------------------- -->
+			<section id="fullContent">
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Introduction">Introduction</h2>
+				<p>La couleur est une représentation du spectre lumineux.</p>
+				<p>La perception dépend de plusieurs facteurs car chaque personne les perçoit différemment.</p>
+				<div class="w3-center"><a href="#">haut de page</a></div>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Le Gamut">Le Gamut</h2>
+				<p>Le Gamut est une représentation de la couleur dans un système donné.</p>
+				<div class="w3-center">
+				<img src="../../images/CIE1931xy_gamut_comparison.svg" alt="Schéma représentant le Gamut" class="responsive">
+				</div>
+				<p>Plus le Gamut est étendu, plus l'image est de qualité.<br>
+				Changer de Gamut durant le processus de traitement de l'image, va perturber celle-ci.</p>
+				<p>Tous les systèmes ont leur propre Gamut, d'un capteur à l'écran ainsi que l'imprimante, de plus même le papier retranscrit son propre Gamut.<br/>
+				Ce pourquoi quand on veut imprimer il faut normalement utilisé le bon profil ICC du papier.</p>
+				<p>Ce dernier point fera l'objet d'un cours spécifique concernant les impressions.<br/>
+				L'atelier dispose actuellement d'une EPSON R3000.</p>
+				<br/>
+				<div class="w3-center"><a href="#">haut de page</a></div>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Cercle de couleurs">Cercle de couleurs</h2>
+				<p>Les cercles de couleurs permettent de comprendre le 2 possibilités qui existent. Elles dépendent des procédés utilisés.</p>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>La synthèse Additive</h3>
+				<p>La synthèse additive des couleurs est le procédé consistant à combiner les lumières de plusieurs sources colorées dans le but d'obtenir une lumière colorée quelconque dans un gamut déterminé.<br/>
+				 L'addition de ces trois lumières colorées en proportions convenables donne la lumière blanche. L'absence de lumière donne du noir.</p>
+				<p>Utilisation&nbsp;:</p>
+				<ul>
+					<li>Les écrans</li>
+					<li>Les projecteurs</li>
+					<li>Les capteurs</li>
+					<li>...</li>
+				</ul>
+				<p>Vous trouverez toutes les explication sur la <a href="https://fr.wikipedia.org/wiki/Synth%C3%A8se_additive" target="_blank">page Wikipédia</a>.</p>
+				<div class="w3-center">
+					<img src="../../images/CouleursAdditives.png" alt="Synthèse Additive" title="Synthèse Additive" width="500">
+				</div>
+				<p>La construction des cercles de couleurs ci-dessus utilise les valeurs de la charte X-Rite sRVB avec les valeurs décimales RGB associées.</p>
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>La Synthèse Soustractive</h3>
+				<p>La synthèse soustractive des couleurs est le procédé consistant à combiner l'absorption d'au moins trois colorants pour obtenir les nuances d'une gamme.</p>
+				<p>Utilisation&nbsp;:</p>
+				<ul>
+					<li>Photographie argentique couleur</li>
+					<li>Impression en couleur</li>
+					<li>...</li>
+				</ul>
+				<p>Vous trouverez toutes les explication sur la <a href="https://fr.wikipedia.org/wiki/Synth%C3%A8se_soustractive" target="_blank">page Wikipédia</a>.</p>
+				<p>En impression, il est important d'utiliser le bon profil ICC.</p>
+				<div class="w3-center">
+					<img src="../../images/CouleursSoustractives.png" alt="Synthèse Soustractive" title="Synthèse Soustractive" width="500">
+				</div>
+				<p>La construction des cercles de couleurs ci-dessus utilise les valeurs de la charte X-Rite sRVB avec les valeurs décimales RGB associées.</p>
+				<br/>
+				<div class="w3-center"><a href="#">haut de page</a></div>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Charte de couleurs">Charte de couleurs</h2>
+				<p>Une charte de couleur sert à calibrer son processus de traitement.<br>
+				Cela permet notamment d'avoir une colorimétrie d'image juste.</p>
+				<div class="w3-center">
+					<img src="../../images/X-Rite_ColorCheker_sRGB.png" alt="X-Rite Color Checker sRGB" title="X-Rite Color Checker sRGB" width="600">
+				</div>
+				<p>Il est important d'utiliser la bonne charte de couleur pour la calibration. On n'utilise pas une charte sRGB pour un process en Adobe RGB ou Pro Photo RGB.</p>
+				<p>On cherche donc les mires de ce type, si vous avez...</p>
+				<br/>
+				<div class="w3-center"><a href="#">haut de page</a></div>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Gris Neutres">Gris Neutres</h2>
+				<p>Une charte de couleur sert à calibrer son processus de traitement.<br>
+				C-dessous une charte de Gris Neutres.</p>
+				<div class="w3-center">
+					<img src="../../images/GrisNeutres.png" alt="Gris Neutres" title="Gris Neutres" width="600">
+				</div>
+				<br/>
+				<div class="w3-center"><a href="#">haut de page</a></div>
+				<hr>
+			</section>
+			<!-- ---------------------------------------------------------------------- -->
+			<footer>
+				<h1>___</h1>
+			</footer>
+		</div>
+		<script src="../../js/listh2.js"></script>
+	</body>
+</html>
