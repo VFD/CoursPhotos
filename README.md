@@ -1,6 +1,13 @@
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+Cours Photos
 
-This work is licensed under a
+Proposition d'un cours photo au format HTML sur clefs USB.
+
+
+Travail en cours.
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+Ce travail est sous licence 
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
