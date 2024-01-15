@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="fr-FR">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" media="all"/>
+		
+		<title></title>
+		<style>
+body {
+	margin-left:0px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #767676; /* C'est la valeur du gris neutre 118, 118, 118 gris 18% */
+  overflow-x: hidden;
+  padding-top: 200px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav li a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}		
+		</style>
+	</head>
+	<body>
+
+
+	<hr style="width:100%">
+	
+	
+<div class="sidenav">
+    <input type="text" id="mySearch" onkeyup="myFunctionH2()" placeholder="Chercher..." title="Commencer à taper et choisissez">
+    <ul id="myMenu"></ul>
+</div>
+		
+<div class="main">
+
+
+
+
+
+
+
+
+	<header>
+		<h1>Atelier Photo Vidéo<br>Les bases de la photo</h1>
+		<nav>
+			<script src="js/menu.js"></script>
+		</nav>
+	<hr style="width:100%">
+	<hr style="width:100%">
+	</header>
+	
+<section id="fullContent">
+
+  <h2 id="Sidebar">Sidebar</h2>
+  <p>This sidebar is of full height (100%) and always shown.</p>
+  <p>Scroll down the page to see the result.</p>
+  <h2 id="Title 2">Title 2</h2>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <h2 id="Title 3">Title 3</h2>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <h2 id="Title 4">Title 4</h2>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+
+
+	</section>
+	
+	<footer>
+		<h1>___</h1>
+	</footer>
+	<!-- drag drop sur nw -->
+	<!-- répertoire package.nw (app.nw sur mac) dans  nw pour compiler -->
+</div>	
+	</body>
+
+<!--
+<script type="text/javascript">
+
+//var truc = document.getElementById("right");
+
+var selectH2 = document.querySelectorAll("h2");
+
+let listeTerme = "";
+for (let terme of selectH2) {
+	if ( terme.id != "" ) {
+		listeTerme += '<li><a href="#' + terme.id + '">' + terme.innerHTML + '</a></li>';
+	}
+}
+document.getElementById("myMenu").innerHTML = listeTerme;
+alert(listeTerme);
+</script>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+-->
+<script src="js/listh2.js"></script>
+</html>
