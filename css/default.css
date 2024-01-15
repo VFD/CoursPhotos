@@ -1,0 +1,157 @@
+/*------------------------------------------------------------------------*
+ | type            : Script JavaScript                                    |
+ | objet           : Menu HTML5 <nav>                                     |
+ | nom source      : menu.js                                              |
+ | auteur          : Vincent DUBOIS                                       |
+ | derniere modif  : 11/01/2024                                           |
+ | version         : 1.0                                                  |
+ *------------------------------------------------------------------------*/
+
+
+/*-----[Fonction]---------------------------------------------------------*/
+:root {
+	--body-bg: Gainsboro;
+	--body-color: black;
+	--anchor-color: blue;
+	--letter-spacing: 0;
+	--sidenav-size: 160px;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--body-bg: black;
+		--body-color: red;
+		--anchor-color: salmon;
+		--letter-spacing: 0.1;
+  }
+}
+
+/*-----[General]----------------------------------------------------------*/
+
+html {
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: #767676; /* C'est la valeur du gris neutre 118, 118, 118 gris 18% */
+}
+
+body {
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: var(--body-bg);
+	color: var(--body-color);
+	letter-spacing: var(--letter-spacing);
+}
+
+nav {
+	text-align: center;
+}
+
+iframe {
+	border:none;
+	height: 200px;
+}
+
+/*-----[Pour les titres h1 et h2]-----------------------------------------*/
+h1 {
+	border-radius: 5px;
+	text-align: center;
+	font-size: xx-large;
+	font-weight: bold;
+	background-image: linear-gradient(to top right, DarkGreen, #087A50, #109463, ForestGreen, green);
+	color: white;
+}
+
+h2 {
+	background-color: SteelBlue;
+	color: white;
+	padding-left: 1em;
+}
+
+/*-----[Pour les tables]--------------------------------------------------*/
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th, td {
+	padding: 5px;
+	text-align: center;
+}
+
+th {
+	background-color:Gainsboro;
+}
+
+td {
+	background-color:Ivory;
+}
+
+/*-----[Class specifiques]------------------------------------------------*/
+
+.hr66 {
+	width: 66%;
+	margin-left: 17%;
+	color: black;
+}
+
+.newspaper {
+	column-count: 2;
+	column-gap: 40px;
+	column-rule: 2px solid black;
+	text-align: justify;
+  }
+/*  */
+
+/*-----[Define search zone on the left]-----------------------------------*/
+
+#mySearch {
+	width: 100%;
+	padding: 5px;
+}
+
+/*-----[Side navigation]--------------------------------------------------*/
+.sidenav {
+  height: 100%;
+  width: var(--sidenav-size);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #767676; /* C'est la valeur du gris neutre 118, 118, 118 gris 18% */
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav li a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: small;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  background-color: green;
+}
+
+/*-----[Main view on the page]--------------------------------------------*/
+.main {
+  margin-left: var(--sidenav-size); /* Same as the width of the sidenav var is usefull */
+  padding: 0px 0px;
+}
+
+/*-----[Media]------------------------------------------------------------*/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}		
+/*-----[EOS]--------------------------------------------------------------*/

@@ -1,0 +1,51 @@
+/*
+
+Use with the listh2.js
+
+*/
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 20%;
+  padding: 15px 0;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 80%;
+  padding: 15px;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#myMenu li a:hover {
+  background-color: green;
+  font-size: 16px;
+  color: white;
+}
+
+/* Style the search box */
+#mySearch {
+  width: auto;
+  font-size: 16px;
+  padding: 11px;
+  border: 3px solid green;
+}

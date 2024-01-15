@@ -1,0 +1,329 @@
+﻿/* ===== [ CSS3 ] ========================================================== */
+/*---------------------------------------------------------------------------*
+ | Nom                  : styles.css                                         |
+ | Version              : 1.0.0                                              |
+ | Outil de dev.        : Microsoft Expression Web et Notepad++              |
+ | Description          : Feuille de style démo HTML5                        |
+ | Auteur               : Vincent Dubois                                     |
+ | Société              : Crédit Agricole S.A.                               |
+ | Service              : IIG - PII/IN                                       |
+ | Date de création     : 10 Octobre 2011                                    |
+ | Date de modification : 25 septembre 2012                                  |
+ | Commentaires         : A utiliser sans modération                         |
+ +-------------------------------------------------------------------------- */
+/*
+CSS3 Browser support
+http://www.w3schools.com/cssref/css3_browsersupport.asp
+*/
+
+/*
+CSS Validator : OK version 2.1
+http://jigsaw.w3.org/css-validator/
+*/
+
+/*
+Couleurs pour Crédit Agricole, dommage qu'il y est une différence entre papier et web.
+
+PUBLICATION:
+Logo
+Tons directs | Quadrichromie      | RVB                 | Hexadécimal | RAL  | 3M Scotchcal film
+Vert 342 (A) | C100, M0, J70, N45 | R 0, V 106, B 78    | #006a4E     | 2026 | 100-56
+Bleu 321 (C) | C100, M0, J40, N15 | R 0, V 149, B 151   | #009597     | 5018 | 100-603
+Rouge 485    | C0, M100, J100, N0 | R 237, V 27, B 47   | #ED1B2F     | 3020 | 100-466
+
+Logo métier
+Tons directs | Quadrichromie      | RVB                 | Hexadécimal | RAL  | 3M Scotchcal film
+Gris 431     | C10, M0, J0, N65   | R 80, V 85, B 87    | #505557     | 7031 | 100-706*
+Vert 341     | C100, M0, J70, N30 | R 0, V 120, B 86    | #006545     | 6029 | 100-450*
+blanc        | -                  | R 255, V 255, B 255 | #FFFFFF     | 9003 | blanc mat*
+
+Vert Editorial - Accent, Bandeau, Green Touch
+Tons directs | Quadrichromie      | RVB                 | Hexadécimal | RAL  | 3M Scotchcal film
+Pantone 340  | C95, J80           | R 0, V 150, B 97    | #009661     |      |
+
+WEB:
+Fond web : #F3F3F3 rgba(243, 243, 243)
+Vert Editorial, rollover menu : #00975A
+Bouton, Picto... : #7AB51D
+Nav N1 : #4C4C4C
+Nav N2 : #8E8E8E
+Filet contour, séparateur menu déroulant : #D9D9D9
+Aplats : #F2F2F2
+
+Note sur la couleur en CSS :
+la notation rgb(255,0,0) au lieu de #FF0000 pour rouge est possible.
+la notation rgb(255,0,0,0.5) donne un rouge transparent à 50%
+Il existe aussi la notation hsl et hsla, basée sur un cercle.
+
+*/
+
+/* convertion pour les font*/
+/* http://blog.dreaminvasion.com/post/Polices-Conversion-Pixels-Points-Ems-Pourcentages */
+
+/* ===== [global] ========================================================== */
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%; /*11pt;*/
+	text-align: justify;
+/*    border-style: solid;
+	border-top-width: 0em;
+	border-top-color: #FFFFFF;
+	border-right-width: 1em;
+	border-right-color: #F3F3F3;
+	border-bottom-width: 0em;
+	border-bottom-color: #FFFFFF;
+	border-left-width: 1em;
+	border-left-color: #F3F3F3;
+*/
+	background-color: #F3F3F3;
+	/*width:100%;*/
+
+}
+
+body {
+	margin-top: 119px; /* la hauteur du header -1 px (bug) */
+	margin-left: 1em;
+	margin-right: 1em;
+	background-color: #FFFFFF;
+	width: 100%-1em;
+	/* min-width: 946px; */
+	/* max-width: 946px; */
+}
+
+/* s'applique à tous éléments le contenant, sinon "a.gras" par exemple */
+/* <span class="gras"> </span>  pour un text spécifique */
+[class=gras] {
+	font-weight: bold;
+}
+
+/* ----- [audio] ----------------------------------------------------------- */
+audio {
+	
+}
+
+/* ----- [video] ----------------------------------------------------------- */
+video {
+	
+}
+
+/* ----- [header] ---------------------------------------------------------- */
+header {
+	margin-left: 0em;
+	margin-right: 1em;
+	
+	position: fixed;	/* le header reste en haut quoi qu'il se passe */
+	top: 0em;	/* coller en haut */
+	left: 1em;	/* = marge gauche du body  */
+
+	height: 120px;
+	width: 100%;
+	
+	/*background-color: #FFFFFF;*/
+	
+	background:  url('../images/header-bg.png') no-repeat top left;	
+
+}
+
+header hgroup h1 {	/* comme le parent est fixed, l'élément reste fixed */
+	position: relative;
+	left: 230px; /* 15 + 185 + 30 : la zone du logo */
+	top: -70px;
+	width: 100%; /*671px;*/
+	/* background-color: rgba(255,0,0,0.25); /* astuce pour positionner en dev */
+	/* visibility: hidden; /* l'espace est pris mais contenu caché */
+	/* display: none; */ /* comme si le contenu n'était pas dans la page */
+}
+
+header p {	/* comme le parent est fixed, l'élément reste fixed */
+	display: none;	/* lélément ne sera pas affiché */
+
+}
+
+/* ----- [header nav] ------------------------------------------------------ */
+header nav {	/* comme le parent est fixed, l'élément reste fixed */
+	position: relative;
+	left: 1em;
+	top: -5em;
+	
+}
+
+header nav a {	/* comme le parent est fixed, l'élément reste fixed */
+	color: #4C4C4C;
+	text-decoration: none;
+}
+
+/* celui-là toujours en dernier */
+header nav a:hover {	/* comme le parent est fixed, l'élément reste fixed */
+	color: #00975A;
+	border-top-style: solid;
+}
+
+
+/* ----- [Spécial logo] ---------------------------------------------------- */
+/*
+L'image du logo contient un class="logo" - ne pas mettre ailleurs
+*/
+[class=logo] {	/* si le parent est fixed, l'élément reste fixed */
+/*	outline-color: #000000;
+	outline-style: dotted; */ /* contour de l'image pour dev */
+	position: relative;
+	left: 0.5em;
+	top: 0.5em;
+	height: 75px;
+	width: 185px;
+}
+
+/* ----- [section] --------------------------------------------------------- */
+section {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+section hgroup h1 {
+	font-size: 2em;
+	color: #4C4C4C;
+}
+
+section hgroup h2 {
+	font-size: 1em;
+	color: #8E8E8E;
+}
+
+/* ----- [article] --------------------------------------------------------- */
+article {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+article hgroup h1 {
+	font-size: large;
+	color: #4C4C4C;
+}
+
+article hgroup h2 {
+	font-size: medium;
+	color: #8E8E8E;
+}
+
+/* juste pour le fun */
+/*
+article p:first-letter {
+	font-size: large;
+	color: #00975A;
+	font-weight: bold;
+}
+*/
+
+/* technique pour centrer toutes les images des articles
+	fonctionne avec tout type de tag en principe */
+article img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/* ----- [form] ------------------------------------------------------------ */
+form {
+}
+
+fieldset {
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #D9D9D9;
+}
+
+legend {
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #D9D9D9;
+}
+
+label {
+	font-family: Courrier New;
+}
+
+
+/* ----- [aside] ----------------------------------------------------------- */
+aside {
+/*	margin-left: 150px; */
+/*	margin-right: 150px; */
+/*	border-style: solid; */
+/*	border-width: thick; */
+/*	border-color: #D9D9D9; */
+display: none;
+}
+
+aside hgroup {
+	display: none;
+}
+
+aside figure img {
+	/* on met comment au centre ? */
+}
+
+/* ----- [footer] ---------------------------------------------------------- */
+footer {
+/*
+position: fixed;
+bottom:0em;
+width: 100%;
+height: 2em;
+*/
+	background-color: #009661;
+	color: #FFFFFF;
+}
+
+footer h1 {
+	display: none;
+}
+
+footer h2 {
+	display: none;
+}
+
+footer h3 {
+	display: none;
+}
+
+footer h4 {
+	display: none;
+}
+
+footer h5 {
+	display: none;
+}
+
+footer h6 {
+	display: none;
+}
+
+footer p {
+	margin-left: 30px;
+	font-size: x-small;
+	font-weight: bold;
+	position: relative;
+	top: 11px;
+
+}
+footer nav {
+	font-size: x-small;
+	text-align: right;
+	color: #FFFFFF;
+	margin-right: 30px;
+	position: relative;
+	top: -11px;
+}
+
+footer a a:visited {
+	color: #FFFFFF;
+}
+
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/* ===== [EOF] ============================================================= */

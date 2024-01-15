@@ -1,0 +1,156 @@
+:root {
+	--body-bg: Gainsboro;
+	--body-color: black;
+	--anchor-color: blue;
+	--letter-spacing: 0;
+	--sidenav-size: 150px;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--body-bg: black;
+		--body-color: red;
+		--anchor-color: salmon;
+		--letter-spacing: 0.1;
+  }
+}
+
+html {
+	background-color: #767676; /* C'est la valeur du gris neutre 118, 118, 118 gris 18% */
+}
+
+body {
+	margin-right: 10%;
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: var(--body-bg);
+	color: var(--body-color);
+	letter-spacing: var(--letter-spacing);
+}
+
+nav {
+	text-align: center;
+}
+
+h1 {
+	border-radius: 5px;
+	text-align: center;
+	font-size: xx-large;
+	font-weight: bold;
+	background-image: linear-gradient(to top right, DarkGreen, #087A50, #109463, ForestGreen, green);
+	color: white;
+}
+
+h2 {
+	background-color: SteelBlue;
+	color: white;
+	padding-left: 1em;
+}
+
+a {
+	color: var(--anchor-color);
+}
+
+p {
+	text-align: justify;
+}
+
+/*
+hr {
+	width: 66%;
+	color: #8cd1d1;
+}
+*/
+
+/* Define tables */
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th, td {
+	padding: 5px;
+	text-align: center;
+}
+
+th {
+	background-color:Gainsboro;
+}
+
+td {
+	background-color:Ivory;
+}
+
+/* Define classes */
+
+.center {
+	text-align: center;
+}
+
+.small {
+	font-size: small;
+}
+
+.hr66 {
+	width: 66%;
+	margin-left: 17%;
+	color: #8cd1d1;
+}
+
+/* Pour les images, max 400 pixel large */
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* Define search zone on the left */
+
+#mySearch {
+	width: 100%;
+	padding: 5px;
+}
+
+.sidenav {
+  height: 100%;
+  width: var(--sidenav-size);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #767676; /* C'est la valeur du gris neutre 118, 118, 118 gris 18% */
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav li a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  background-color: green;
+}
+
+.main {
+  margin-left: var(--sidenav-size); /* Same as the width of the sidenav var is usefull */
+  padding: 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}		
