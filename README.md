@@ -1,12 +1,12 @@
 
 # <div style="text-align: center;">Cours Photos, Vidéos</div>
 
-&#128679; Mise à jour au fil de l'eau et des demandes &#128679;
+<div style="text-align: center;">&#128679; Mise à jour au fil de l'eau et des demandes &#128679;</div>
 
 ## Introduction
 
 L'ensemble des fichiers sert de support pour des cours de photos et de vidéos. Ceux-ci sont dispensés actuellement au sein d'une entreprise via son CSE.
-L'ensemble est en perpetuel évolution, les mise à jour se font en fonction des besoins.
+L'ensemble est en perpetuel évolution, les mises à jour se font en fonction des besoins.
 
 L'idée a germée de tout mettre en oeuvre sur clé USB, au même principe qu'il y a des applications portables.
 
@@ -19,6 +19,8 @@ L'idée est d'avoir un sytème autonome capable de fonctionner sans connexion in
 
 Ce pourquoi l'ensempble des css et JavaScript sont intégrés au package.
 
+Il y a bien sûr des liens vers des ressources sur le web car ce n'est pas intégrable ([Wikipédia](https://fr.wikipedia.org/), [YouTube](https://www.youtube.com/), etc.). Ces liens ne fonctionneront pas si il n'y a pas de connexion internet. Sur ce point on ne peut pas faire grand chose.
+
 <hr>
 
 ## Les cours
@@ -30,7 +32,7 @@ Il est possible soit de donner un cours en parcourant les différents sujets abo
 
 ### En autonomie
 
-Il sufit pour vous de simplement lire les documents fournis.
+Il vous suffit de simplement lire les documents fournis.
 
 <hr>
 
@@ -38,6 +40,7 @@ Il sufit pour vous de simplement lire les documents fournis.
 
 La mise à jour est fonction des demandes de cours.
 Quand une formation est demandé sur un sujet, alors il y a un cours créé sur le sujet.
+Encore faut-il trouver le temps et les compétences pour la rédaction.
 
 RAPPEL : Le système est donc en perpétuelle évolution. Merci de nous faire des retours pour tout ajout transformations, corrections, etc.
 
@@ -52,15 +55,28 @@ Rien n'empêche de tout mettre sur un disque dur.
 
 <hr style="width: 33%">
 
+### via un serveur
+
+Ce n'est pas la vocation première du projet mais c'est envisageable et cela devrait fonctionner correctement.
+
+<hr style="width: 33%">
+
+### En application
+
+Packager le tout en application devrait être possible.
+
+Nous n'avons pour le moment pas étudié plus avant cette possibilité, surtout du fait d'un manque de compétences dans ce modèle de production.
+
+<hr style="width: 33%">
+
 ### Structure
 
 L'ensemble est structuré de la manière suivante :
 
-[à faire]
-
 ```
-.[Répertoire source]
-└── 📂 ateliers
+📂 Répertoire source
+│
+├── 📂 ateliers
 │   ├── 📂 xxx
 │   │   ├── 📄 xxx.html
 │   │   └── 📄 README.md
@@ -69,39 +85,39 @@ L'ensemble est structuré de la manière suivante :
 │   └── 📄 README.md
 │
 ├── 📂 cours
-│   └── 📂 astrophotographie
+│   ├── 📂 astrophotographie
 │   │   ├── 📄 fichiers html pour le cours
 │   │   └── 📄 README.md
 │   │
-│   └── 📂 bases
+│   ├── 📂 bases
 │   │   ├── 📄 fichiers html pour le cours
 │   │   └── 📄 README.md
 │   │
-│   └── 📂 editique
+│   ├── 📂 editique
 │   │   ├── 📄 fichiers html pour le cours
 │   │   └── 📄 README.md
 │   │
-│   └── 📂 filtres
+│   ├── 📂 filtres
 │   │   ├── 📄 fichiers html pour le cours
 │   │   └── 📄 README.md
 │   │
-│   └── 📂 harcourt
+│   ├── 📂 harcourt
 │   │   ├── 📄 fichiers html pour le cours
 │   │   └── 📄 README.md
 │   │
-│   └── 📂 hdr
+│   ├── 📂 hdr
 │   │   ├── 📄 fichiers html pour le cours
 │   │   └── 📄 README.md
 │   │
-│   └── 📂 macro
+│   ├── 📂 macro
 │   │   ├── 📄 fichiers html pour le cours
 │   │   └── 📄 README.md
 │   │
-│   └── 📂 maths
+│   ├── 📂 maths
 │   │   ├── 📄 fichiers html pour le cours
 │   │   └── 📄 README.md
 │   │
-│   └── 📂 pauselongue
+│   ├── 📂 pauselongue
 │   │   ├── 📄 fichiers html pour le cours
 │   │   └── 📄 README.md
 │   │
@@ -115,16 +131,18 @@ L'ensemble est structuré de la manière suivante :
 │   └── 📄 README.md
 │
 ├── 📂 docs
-│   ├── 📄 fichiers documents
+│   ├── 📄 fichiers documents non html
+│   └── 📄 README.md
 │
 ├── 📂 images
 │   ├── 📄 fichiers images utilisés dans l'ensemble du site
+│   └── 📄 README.md
 │
-└── 📂 js
+├── 📂 js
 │   ├── 📄 fichiers JavaScript
 │   └── 📄 README.md
 │
-├── 📄 index.html
+├── 📄 index.html <- cliquer sur ce fichier
 ├── 📄 indexphoto.html
 ├── 📄 indexvideo.html
 ├── 📄 ressources.html
@@ -150,7 +168,7 @@ Simplement double cliquer sur le fichier index.html.
 
 Le système est en version alpha pour évaluation de la faisabilité.
 
-En attente de retour d'utilisateurs pour amélioré et continuer le projet le cas échéant.
+En attente de retour d'utilisateurs pour améliorer et continuer le projet le cas échéant.
 
 ## Licence
 
