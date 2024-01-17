@@ -160,7 +160,7 @@ Il est possible de les convertir au format HTML, ce n'est pas encore fait.
 
 ### Exécution
 
-Simplement double cliquer sur le fichier index.html.
+Simplement double cliquer sur le fichier index.html à la racine du projet.
 
 <hr>
 
