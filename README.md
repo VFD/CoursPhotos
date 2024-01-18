@@ -1,7 +1,13 @@
 
 # <div style="text-align: center;">Cours Photos, Vidéos</div>
 
-<div style="text-align: center;">&#128679; Mise à jour au fil de l'eau et des demandes &#128679;</div>
+<div style="text-align: center;">&#128679; Mise à jour au fil de l'eau et des demandes &#128679;
+
+[Paypal Donate](https://www.paypal.com/donate/?business=5LX8QALBQH58U&no_recurring=0&currency_code=EUR)
+
+</div>
+
+<img style="display: block; margin: auto; width:100px" alt="photo" src="images/PayPalMe_QRcode.png">
 
 ## Introduction
 
