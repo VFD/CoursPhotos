@@ -1,0 +1,1155 @@
+<!DOCTYPE HTML>
+<html lang="fr-FR">
+	<!-- ---------------------------------------------------------------------- -->
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../css/w3.css">
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script>
+			MathJax = {
+				chtml: {
+					displayAlign: 'center'
+				},
+				svg: {
+					displayAlign: 'center',
+					fontCache: 'global'
+				}
+			}
+		</script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/default.css" media="all"/>
+	</head>
+	<!-- ---------------------------------------------------------------------- -->
+	<body>
+		<!-- ---------------------------------------------------------------------- -->
+		<div class="sidenav">
+			<input type="text" id="mySearch" onkeyup="myFunctionH2()" placeholder="Chercher..." title="Commencer à taper et choisissez">
+			<ul id="myMenu"></ul>
+		</div>
+		<!-- ---------------------------------------------------------------------- -->
+		<div class="main">
+			<!-- ---------------------------------------------------------------------- -->
+			<header>
+				<h1>Atelier Photo Vidéo<br/>Mathématiques</h1>
+				<nav>
+					<script src="../../js/menu3.js"></script>
+				</nav>
+				<hr>
+				<p class="w3-center w3-wide">Vous trouverez ici de nombreuses formules mathématiques.<br/>
+				Ce n'est pas compliqué, ce sont des formules très simples à comprendre et à appliquer.</p>
+				<hr>
+			</header>
+			<!-- ---------------------------------------------------------------------- -->
+			<section id="Mathématiques">
+				<!-- ---------------------------------------------------------------------- -->
+				<h1>&#128679; Mathématiques pour la photo &#128679;</h1>
+				<h2 id="Résumé">Résumé</h2>
+				<p>En principe ce cours se fait en présentiel. Il peut se faire à la demande.</p>
+				<p>NB : Cette page utilise les scripts externes de <a href="https://www.mathjax.org/" target="_blank">MathJax</a>, sans connexion, les formules ne s'afficherons pas correctement.<br/>
+				Les formules importantes sont encadrées de rouge est sur un fond LightYellow. Exemple :  \( \bbox[LightYellow,border:1px solid red, 10px] { 2 \times \sqrt x } \).<br/>
+				&#128679; Etude en cours pour intégrer les scripts.<p>
+				<p>Le code source de la page est libre d'être regardé si vous voulez apprendre à utiliser MathsJax.<br/>
+				En cliquant avec le bouton droit sur la formule vous faites apparaître un menu.<br/>
+				L'option Show Math as &#x279C; MathML Code, permet de récupérer le code HTML de l'équation.<br/>
+				En copiant directement ce code dans une page HTML, vous aurez l'équation sans avoir besoin de la bibliothèque.</p>
+				<p>&#10071; Il y a un bug de responsive design à cause des tables, on cherche à résoudre le pb.</p>
+				<br/><div class="center"><a href="#">haut de page</a></div>
+				<!-- Maths
+				https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+				-->
+				<!-- caractères
+				https://outils-javascript.aliasdmc.fr/
+				-->
+				<!-- couleurs
+				https://www.w3schools.com/colors/colors_names.asp
+				-->
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Application">Mise en application</h2>
+				<p>Une page dédiée permet l'automatisation de calculs présentés ici.</p>
+				<p><a href="calculs.html">Accéder à la page</a>.</p>
+				<hr>
+				
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Capteur">Capteur</h2>
+				
+				<h3>Diagonale du format</h3>
+				<p>C'est une des première chose à connaitre concernant son appareil photo.
+				C'est cette diagonale qui donne pour un capteur donné sa focale dite normale.
+				Par capteur on entend aussi bien l'argentique que le numérique.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Focale standard d'un capteur</h3>
+				<p>Le capteur étant un rectangle (généralisation), la formule est ultra simple.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { d_c =  { \sqrt {La^2 + Lo^2} } } \]</p>
+				<p>Cette valeur donne donc aproximativement l'équivalent de ce qu'un humain voit (champ de vision) pour le capteur calculé.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Tableau des tailles de capteur et leur focale dite standard</h3>
+				<p>En dessous de la focale standard, on parle de grand angle. Au dessus de la focale standard on parle de zoom.</p>
+				<p>Dans tous les tableaux suivants, la valeur entre parenthèse et l'objectif classique dit normale.<br/>
+				Vous constaterez certaines différences.</p>
+				<p>Vouloir ramener un couple objectif/capteur à du 35mm est de la bêtise pure et simple. Veuillez oublier cette stupidité.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h4>Petits formats</h4>
+				<div style="overflow-x:auto;">
+				<table>
+					<tr>
+						<th>Capteur</th>
+						<th>Dimensions<br/>(mm)</th>
+						<th>Focale<br/>(mm)</th>
+					</tr>
+					<tr>
+						<th>135<br/>(plein format)</th>
+						<td>24x36</td>
+						<td>43 (50)</td>
+					</tr>
+					<tr>
+						<th>135<br/>(diapo sous cache)</th>
+						<td>23x35</td>
+						<td>42</td>
+					</tr>
+					<tr>
+						<th>135<br/>(1/2 format)</th>
+						<td>18x24</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<th>126</th>
+						<td>28x28</td>
+						<td>39</td>
+					</tr>
+					<tr>
+						<th>110</th>
+						<td>13x17</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<th>DISC</th>
+						<td>8x10</td>
+						<td>12</td>
+					</tr>
+				</table>
+				</div>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h4>Moyens et grands formats</h4>
+				<div style="overflow-x:auto;">
+				<table>
+					<tr>
+						<th>Capteur</th>
+						<th>Dimensions<br/>(mm)</th>
+						<th>Focale<br/>(mm)</th>
+					</tr>
+					<tr>
+						<th>4x4</th>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>4.5x6</th>
+						<td>45x56</td>
+						<td>71</td>
+					</tr>
+					<tr>
+						<th>6x6</th>
+						<td>56x56</td>
+						<td>79 (80)</td>
+					</tr>
+					<tr>
+						<th>6x7</th>
+						<td>56x72</td>
+						<td>91</td>
+					</tr>
+					<tr>
+						<th>6x8</th>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>6x9</th>
+						<td>56x85</td>
+						<td>101</td>
+					</tr>
+					<tr>
+						<th>6x12</th>
+						<td>56x</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>6x17</th>
+						<td>56x</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>4x5"</th>
+						<td>102x127</td>
+						<td>162 (150)</td>
+					</tr>
+					<tr>
+						<th>5x7"</th>
+						<td>127x178</td>
+						<td>218 (200)</td>
+					</tr>
+					<tr>
+						<th>8x10"</th>
+						<td>203x254</td>
+						<td>325 (300)</td>
+					</tr>
+				</table>
+				</div>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h4>Cinéma</h4>
+				<div style="overflow-x:auto;">
+				<table>
+					<tr>
+						<th>Capteur</th>
+						<th>Dimensions<br/>(mm)</th>
+						<th>Focale<br/>(mm)</th>
+					</tr>
+					<tr>
+						<th>8mm standard</th>
+						<td>4.37x3.28</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<th>super 8</th>
+						<td>4.01x5.36</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<th>16mm 1.37</th>
+						<td>7.1x9.7</td>
+						<td>12</td>
+					</tr>
+					<tr>
+						<th>16mm 1.66</th>
+						<td>5.9x9.7</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<th>16 2.35</th>
+						<td>7.1x8.35</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<th>35 1.37</th>
+						<td>15.30x21</td>
+						<td>26</td>
+					</tr>
+					<tr>
+						<th>35 1.66</th>
+						<td>12.75x21</td>
+						<td>24</td>
+					</tr>
+					<tr>
+						<th>35 1.85</th>
+						<td>11.35x21</td>
+						<td>24</td>
+					</tr>
+					<tr>
+						<th>35 2.35</th>
+						<td>18.15x21.3</td>
+						<td>28</td>
+					</tr>
+				</table>
+				</div>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h4>Numériques</h4>
+				<div style="overflow-x:auto;">
+				<table>
+					<tr>
+						<th>Capteur</th>
+						<th>Dimensions<br/>(mm)</th>
+						<th>Focale<br/>(mm)</th>
+					</tr>
+					<tr>
+						<th>APS-C Canon</th>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>APS-C Nikon</th>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Full Frame (24x36)</th>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Super 35</th>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>KAF</th>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				</div>
+				
+				<hr class="hr66">
+				
+				<p>Les tableaux se rempliront au fur et à mesure des mises à jours.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Précision sur les capteurs</h3>
+				<p>Ce n'est pas parce qu'on a un grand capteur que l'on fait de meilleurs photos.<br/>
+				Ce n'est pas parce qu'on a un plus grand capteur que les photos sont plus nettes.<br/>
+				Tout dépend du couple Objectif/Capteur.<br/>
+				Si vous avez un objectif médiocre, les photos seront moins bonnes.<br/>
+				Il faut toujours la bonne association Objectif/Capteur.<br/>
+				Investir dans des bagues d'adaptation ne sert à pas grand chose.<br/>
+				Par exemple, un objectif argentique n'est pas adapté au numérique. Les photos ne seront jamais optimisées. Mais vous pouvez obtenir un look particulier (c'est votre projet).<br/>
+				Qui plus est, il y aura une perte de lumière sur les bords de l'image, cela est lié à la conception même des objectifs argentiques.</p>
+				
+				<div class="center"><a href="#">haut de page</a></div>
+				
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Diaphragme">Diaphragme</h2>
+				
+				<h3>Introduction</h3>
+				<p>Le diaphragme c'est ce qui sert à faire entrer plus ou moins de lumière pour le capteur.<br/>
+				C'est une valeure sans unité, elle se calcul. Elle est notée N.<br/>
+				La notation courante est f/n, qu'on appel le diaphragme (DP).</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Calcul du diaphragme</h3>
+				<p>Soit N pour une focale donnée (F), alors :</p>
+				<p>\[ N = { F \over d } \]</p>
+				<p>Avec d le diamètre de la pupille d'entrée.</p>
+				d est exprimé comme suit : \( { ( \sqrt 2 ) } ^n \)</p>
+				<p>L’échelle normalisée des diaphragmes commence à la valeur f/1.<br/>
+				Pour que \( { ( \sqrt 2 ) } ^n = 1 \), il faut que \(n=0\) puisque \(x^0=1\),
+				on incrémente n, est on obtient les valeurs de N.</p>
+				<p>Il y a le système <abbr title="Additive system of Photography EXposure">APEX</abbr>.</p>
+				<p>On l'appel indice d'ouverture (\( A_v \)). C'est un logarithme.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { A_v = { 2 \times \log _2 (N) } }  \]</p>
+				<p>\[ N^2 = { 2^{A_v} } \]</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { N = { \sqrt { 2^{A_v} } } }  \]</p>
+				<br/>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Table standard</h3>
+				<p>Les valeurs sont arrondies.</p>
+				<div style="overflow-x:auto;">
+				<table>
+					<tr>
+						<th>\( A_v \)</th>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<th>DP</th>
+						<td>1</td>
+						<td>1.4</td>
+						<td>2</td>
+						<td>2.8</td>
+						<td>4</td>
+						<td>5.6</td>
+						<td>8</td>
+						<td>11</td>
+						<td>16</td>
+						<td>22</td>
+						<td>32</td>
+						<td>45</td>
+						<td>64</td>
+						<td>90</td>
+					</tr>
+				</table>
+				</div>
+				<p>Dans le jargon, chaque changement dans la table ci-dessus s'appel un "Stop".<br/>
+				Par exemple, passer de f/4 à f/8 c'est un changement de 2 stops.</p>
+				<br/>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Table en &#x2153; de diaphragme</h3>
+				<p>C'est celle-ci que l'on trouve sur les appareils photos, les cellules.</p>
+
+				<div style="overflow-x:auto;">
+				<table>
+					<tr>
+						<th>\( A_v \)</th>
+						<td>0</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>1</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>2</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>3</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>4</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>5</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>6</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>7</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>8</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>9</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>10</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>11</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>12</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<th>N</th>
+						<td>1</td>
+						<td>1.1</td>
+						<td>1.2</td>
+						<td>1.4</td>
+						<td>1.6</td>
+						<td>1.8</td>
+						<td>2</td>
+						<td>2.2</td>
+						<td>2.5</td>
+						<td>2.8</td>
+						<td>3.2</td>
+						<td>3.5</td>
+						<td>4</td>
+						<td>4.5</td>
+						<td>5</td>
+						<td>5.6</td>
+						<td>6.3</td>
+						<td>7.1</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>13</td>
+						<td>14</td>
+						<td>16</td>
+						<td>18</td>
+						<td>20</td>
+						<td>22</td>
+						<td>25</td>
+						<td>29</td>
+						<td>32</td>
+						<td>36</td>
+						<td>40</td>
+						<td>45</td>
+						<td>51</td>
+						<td>57</td>
+						<td>64</td>
+						<td>72</td>
+						<td>80</td>
+						<td>90</td>
+					</tr>
+				</table>
+				</div>
+				
+				<br/>
+				<p>N, car <abbr title="Additive system of Photography EXposure">APEX</abbr>, plus loin dans les calcul on utilisera aussi la notation DP.</p>
+				<p>Si on reprent l'exemple précédent, passer de f/4 à f/8, c'est toujours 2 stops, par contre, vous avez décalé avec la molette 6 fois.<br/>
+				les étapes : f/4 &#x279C; f/4.5 &#x279C; f/5 &#x279C; f/5.6 &#x279C; f/6.3 &#x279C; f/7.1 &#x279C; f/8.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Table en &#xBD; de diaphragme</h3>
+				<div style="overflow-x:auto;">
+				<table>
+					<tr>
+						<th>\( A_v \)</th>
+						<td>0</td>
+						<td>&#xBD;</td>
+						<td>1</td>
+						<td>&#xBD;</td>
+						<td>2</td>
+						<td>&#xBD;</td>
+						<td>3</td>
+						<td>&#xBD;</td>
+						<td>4</td>
+						<td>&#xBD;</td>
+						<td>5</td>
+						<td>&#xBD;</td>
+						<td>6</td>
+						<td>&#xBD;</td>
+						<td>7</td>
+						<td>&#xBD;</td>
+						<td>8</td>
+						<td>&#xBD;</td>
+						<td>9</td>
+						<td>&#xBD;</td>
+						<td>10</td>
+						<td>&#xBD;</td>
+						<td>11</td>
+						<td>&#xBD;</td>
+						<td>12</td>
+						<td>&#xBD;</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<th>N</th>
+						<td>1</td>
+						<td>1.2</td>
+						<td>1.4</td>
+						<td>1.7</td>
+						<td>2</td>
+						<td>2.4</td>
+						<td>2.8</td>
+						<td>3.3</td>
+						<td>4</td>
+						<td>4.8</td>
+						<td>5.6</td>
+						<td>6.7</td>
+						<td>8</td>
+						<td>9.5</td>
+						<td>11</td>
+						<td>13</td>
+						<td>16</td>
+						<td>19</td>
+						<td>22</td>
+						<td>27</td>
+						<td>32</td>
+						<td>38</td>
+						<td>45</td>
+						<td>54</td>
+						<td>64</td>
+						<td>76</td>
+						<td>90</td>
+					</tr>
+				</table>
+				</div>
+				<p>N, car <abbr title="Additive system of Photography EXposure">APEX</abbr>, plus loin dans les calculs on utilisera aussi la notation DP.</p>
+						
+				<br/>
+				<br/><div class="center"><a href="#">haut de page</a></div>
+				
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Vitesse">Vitesse</h2>
+				<p>La table des vitesses est normalisée.<br/>
+				Tous les appareils ont la même.<br/>
+				Si vous augmentez la vitesse, vous divisez par 2 la quantité de lumière.<br/>
+				Si vous baissez la vitesse, vous doublez la quantité de lumière.</p>
+				<p>Il est possible que votre appareil n'est pas toutes les valeurs indiquées dans le tableau, ceci n'est pas un problème.<br/>
+				C'est simplement un choix de constructeur et ça se gère sans problème.</p>
+				<div style="overflow-x:auto;">
+				<table>
+					<tr>
+						<th>S</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+					</tr>
+
+					<tr style="writing-mode: vertical-rl;">
+						<th>Vitesse</th>
+						<td>B / T</td>
+						<td>30s</td>
+						<td>25s</td>
+						<td>20s</td>
+						<td>15s</td>
+						<td>13s</td>
+						<td>10s</td>
+						<td>8s</td>
+						<td>6s</td>
+						<td>5s</td>
+						<td>4s</td>
+						<td>3.2s</td>
+						<td>2.5s</td>
+						<td>2s</td>
+						<td>1.6s</td>
+						<td>1.3s</td>
+						<td>1s</td>
+						<td>0.8s</td>
+						<td>0.6s</td>
+						<td>1/2s</td>
+						<td>0.4s</td>
+						<td>0.3s</td>
+						<td>1/4s</td>
+						<td>1/5s</td>
+						<td>1/6s</td>
+						<td>1/8s</td>
+						<td>1/10s</td>
+						<td>1/13s</td>
+						<td>1/15s</td>
+						<td>1/20s</td>
+						<td>1/25s</td>
+						<td>1/30s</td>
+						<td>1/40</td>
+						<td>1/50s</td>
+						<td>1/60</td>
+						<td>1/80s</td>
+						<td>1/100</td>
+						<td>1/125s</td>
+						<td>1/160s</td>
+						<td>1/200s</td>
+						<td>1/250s</td>
+						<td>1/320s</td>
+						<td>1/400s</td>
+						<td>1/500s</td>
+						<td>1/640s</td>
+						<td>1/800s</td>
+						<td>1/1000s</td>
+						<td>1/1250s</td>
+						<td>1/1600s</td>
+						<td>1/2000s</td>
+						<td>1/2500s</td>
+						<td>1/3200s</td>
+						<td>1/4000s</td>
+						<td>1/5000s</td>
+						<td>1/6400s</td>
+						<td>1/8000s</td>
+					</tr>
+				</table>
+				</div>
+				<p>La table ci-dessus est exprimée en tiers.<br/>
+				Par exemple, changer d'un Stop, c'est 3 cases.</p>
+				
+				<br/><div class="center"><a href="#">haut de page</a></div>
+						
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="ISO">ISO</h2>
+				<p>La table des ISO est normalisée.<br/>
+				Tous les appareils ont la même.<br/>
+				Si vous augmentez les ISO, vous doublez la quantité de lumière. Vous augmentez aussi le bruit numérique (grain).<br/>
+				Si vous baissez les ISO, vous divisez par 2 la quantité de lumière. Vous diminuez aussi le bruit numérique (grain).</p>
+				<p>Il est possible que votre appareil n'est pas toutes les valeurs indiquées dans le tableau, ceci n'est pas un problème.<br/>
+				C'est simplement un choix de constructeur et ça se gère sans problème.</p>
+				
+				<div style="overflow-x:auto;">
+				<table>
+					<tr>
+						<th>S</th>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+						<td>&#x2153;</td>
+						<td>&#x2154;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr style="writing-mode: vertical-rl; ">
+						<th>ISO</th>
+						<td>25</td>
+						<td>32</td>
+						<td>40</td>
+						<td>50</td>
+						<td>64</td>
+						<td>80</td>
+						<td>100</td>
+						<td>125</td>
+						<td>160</td>
+						<td>200</td>
+						<td>250</td>
+						<td>320</td>
+						<td>400</td>
+						<td>500</td>
+						<td>640</td>
+						<td>800</td>
+						<td>1000</td>
+						<td>1250</td>
+						<td>1600</td>
+						<td>2000</td>
+						<td>2500</td>
+						<td>3200</td>
+						<td>4000</td>
+						<td>5000</td>
+						<td>6400</td>
+						<td>8000</td>
+						<td>10000</td>
+						<td>12800</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>25600</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>51200</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>102400</td>
+					</tr>
+				</table>
+				</div>
+				
+				<p>La table ci-dessus est exprimée en tiers.<br/>
+				Par exemple, changer d'un Stop, c'est 3 cases.</p>
+				<p>&#128073; L'ISO doit toujours être le plus petit possible, <strong>on ne l'augmente QUE SI ET SEULEMENT SI on n'a plus le choix</strong>.</p>
+				<div class="center"><a href="#">haut de page</a></div>
+				
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2>&#128679; Calculs sur l'objectif &#128679;</h2>
+				<h3>Introduction</h3>
+				<p>Quelques éléments pour déterminer certaines caractéristiques utiles sur les optiques.<br/>
+				Il faut bien comprendre certaines caractéristique pour comprendre pourquoi on obtient tel ou tel résultat.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Calcul de l'angle de champ</h3>
+				<p>&#128679; C'est la valeur la plus importante.<br/>
+				Elle est plus importante que la focale.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Champ couvert</h3>
+				<p>&#128679;</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Grandissement</h3>
+				<p>&#128679;<br/>
+				C'est le facteur qui montre la taille d'un élément à une certaine échelle sur le capteur. Quel que soit le capteur.<br/>
+				Par exemple, un facteur de grandissement 1, alors si l'objet fait 1cm, il fera aussi 1cm sur le capteur.<br/>
+				Chez Canon, le 60mm MPE va jusqu'à un facteur de 5. Donc 1mm fera 5mm sur le capteur.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Cercle de confusion</h3>
+				<p>&#128679;<br/>
+				C'est la dimension à partir de laquelle l'optique ne peut plus être nette.<br/>
+				Cela se mesure aussi en paire de ligne, à partir de la photographie d'une mire, par exemple une mire USAF.<br/>
+				Les 2 lignes se confondent sur la photo.</p>
+				<p>En règle générale, on utilise la valeur de 0.000033m.</p>
+				<p>Si vous connaissez cette valeur pour votre optique, il faudra donc l'utiliser pour les calculs.</p>
+				
+				<div class="center"><a href="#">haut de page</a></div>
+				
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Bonnette">Les Bonnettes</h2>
+				
+				<h3>Dioptrie +</h3>
+				<p>Les bonnettes avec une dioprie positive vont permettre de modifier la distance focale d'un objectif.<br/>
+				On parle de lentille convergente (presbyte).<br/>
+				Elle augmente l'ouverture relative.<br/>
+				Elle se monte devant l'objectif.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Dioptrie &minus;</h3>
+				<p>Les bonnettes avec une dioprie négative vont permettre de modifier la distance focale d'un objectif.<br/>
+				On parle de lentille divergente (myope).<br/>
+				Elle diminue l'ouverture relative.<br/>
+				Elle se monte devant l'objectif.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Calculs sur les objectifs avec une bonette</h3>
+				<p>La dioptrie correspond à la puissance d'une lentille de 1m de distance focale ( F=1000mm).</p>
+				<p>Pour calculer la dioprie <i>d</i> d'une focale F (toutes les valeurs de même unité).</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { d = {1000 \over F } } \]</p>
+				<p>Exemple pour une focale de F = 200mm.</p>
+				<p>\[ d = {1000 \over 200 } = 5 \]</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Exemples pratiques</h3>
+				
+				<p>&#128073; J'ai un objectif de focale <b>F=250mm</b> que je veux ramener à <b>F=200mm</b> (diminussion de la focale).</p>
+				<p>Calculer la puissance de l'objecif.</p>
+				<p>\[ d_o = {1000 \over 250 } = 4 \]</p>
+				<p>Calculer la puissance de la focale visée.</p>
+				<p>\[ d_v = {1000 \over 200 } = 5 \]</p>
+				<p>Calculer la différence.</p>
+				<p>
+				\begin{align}
+				d_v - d_o &= 5 - 4 \\
+				&= 1
+				\end{align}
+				</p>
+				<p>En placant un bonnette de dioprie +1 sur l'optique de focale <b>F 250mm</b> j'obtient une focale <b>F 200mm</b>.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<p>&#128073; J'ai un objectif de focale <b>F=100mm</b> que je veux augmenter à <b>F=200mm</b> (allongement de la focale).</p>
+				<p>Calculer la puissance de l'objecif.</p>
+				<p>\begin{align}
+				d_o &= {1000 \over 100 } \\
+				d_o &= 10
+				\end{align}
+				</p>
+				<p>Calculer la puissance de la focale visée.</p>
+				<p>\begin{align}
+				d_v &= {1000 \over 200 } \\
+				d_v &= 5
+				\end{align}
+				</p>
+				<p>Calculer la différence.</p>
+				<p>\begin{align}
+				d_v - d_o &= 5 - 10 \\
+				d_v - d_o &= -5
+				\end{align}
+				</p>
+				<p>En placant un bonnette de dioprie -5 sur l'optique de focale <b>F 100mm</b> j'obtient une focale <b>F 200mm</b>.</p>
+				<p>Problème, ces bonnettes sont introuvables.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<p>&#10071; Peu de gens utilisent les formules comme ci-dessus par méconnaissance.<br/>
+				En générale ce qui se passe c'est, je monte une bonnette de dioptrie &#x2213;d et on vois ce qui va arriver...<br/>
+				On appel ça la méthode à l'arrache.<br/>
+				En fait très souvent une bonnette +d pour faire de la macrophotographie.</p>
+				
+				<p>&#128073; Procédons aux calculs adéquats avec un objectif de focale F=100mm et une bonnette d=+4.</p>
+				<p>Calculer la puissance de l'objecif \( d_o \).</p>
+				<p>\[ d_o = {1000 \over 100 } = 10 \]</p>
+				<p>Des équations ci-dessus nous avons.</p>
+				<p>
+				\begin{align}
+				d_v - d_o &= +4 \\
+				d_v - 10 &= +4 \\
+				d_v &= +14 \\
+				d_v &= { 1000 \over F_c } \\
+				F_c &= { 1000 \over d_v } \\
+				F_c &= { 1000 \over 14 } \\
+				F_c &= 71.42
+				\end{align}
+				<p>La nouvelle focale est donc F=71.42mm.</p>
+				
+				<p>Si lors de l'utilisation d'une bonnette vous ne faites pas le calcul ci-dessus.<br/>
+				Alors c'est la &#x2620; pour les calculs de profondeur de champs.</p>
+				<p>En macro voir le chapitre ci-après sur la <a href="#Macro">macrophotographie</a>.</p>
+				
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Profondeur de champ">Profondeur de champ</h2>
+				
+				<h3>Introduction</h3>
+				<p>Profondeur de champ et hyperfocale, c'est l'étendue en profondeur de la zone de netteté acceptable...<br/>
+				C'est une notion assez subjective, car elle dépend aussi de l'observateur.
+				Les maths vont nous donner des valeurs justes.<br/>
+				On peut utiliser la profondeur de champ de différentes manières, la plus évidente est celle-ci&nbsp;:<br/>
+				&#128073; J'ai tel objectif (F), ouvert à tel diaphragme (DP), ma mise au point est faite sur telle distance (DS), entre quelles limites serai-je net&nbsp;?<br/>
+				Mais on peut aussi tourner le problème à l'envers&nbsp;:<br/>
+				&#128073; Je veux être net entre tel (A) et tel point (B), avec cet objectif dont la focale est tant (F).<br/>
+				&#128073; Je veux être net entre tel point (A) et l'infini (&infin;), avec cet objectif dont la focale est tant (F).</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Les données nécessaires</h3>
+				<p>Pour les calculs il nous faut&nbsp;:</p>
+				<div style="overflow-x:auto;">
+				<table>
+					<caption>Données pour calculs</caption>
+					<tr>
+						<td>F</td>
+						<td>focale de l'objectif en mm (exemple : 50 mm)</td>
+					</tr>
+					<tr>
+						<td>DP</td>
+						<td>diaphragme utilisé (exemple : 5.6, 8, 11, etc.)</td>
+					</tr>
+					<tr>
+						<td>DS</td>
+						<td>distance de mise au point en mètres (exemple 2.5 m)</td>
+					</tr>
+					<tr>
+						<td>E</td>
+						<td>diamètre du cercle de confusion, exprimé en mètres, sa valeur la plus courante est 0.000033m</td>
+					</tr>
+					<tr>
+						<td>A</td>
+						<td>limite anterieure de netteté souhaitée, exprimée en mètres</td>
+					</tr>
+					<tr>
+						<td>B</td>
+						<td>limite posterieure de netteté souhaitée, exprimée en mètres</td>
+					</tr>
+				</table>
+				</div>
+				<p>E peut être aussi considéré comme la qualité de l'optique. Il faut regarder les spécifications.<br/>
+				On peut constater que la taille du capteur ne change strictement rien.<br/>
+				Il y a quand même un point d'attention à avoir, voir plus bas.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Schéma explicatif pour A, B, DS</h3>
+				<p>Dans le schéma suivant sont représentées les distances essentiels à conaître.</p>
+				<div class="center"><!-- Dessin généré par Visio -->
+					<img src="../../images/ds.svg" alt="Schéma représentant les distances A, B et DS">
+				</div><!-- Fin Dessin généré par Visio -->
+				<p>En dessous de la Limite Anterieure (A), la zone est floue.<br/>
+				Au-dela de la Limite Postérieure (B), la zone est floue.<br/>
+				Le point se fait à la Distance de mise au point (DS), là ou se trouve le sujet.</p>
+				<p>Si on connait le diamètre du cercle de confusion (E) de l'optique alors on l'utilise, sinon on prend la valeur standard.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Limites de netteté</h3>
+				<p>Calcul des limites de netteté (A, B).<br/>
+				Connaissant la focale (F) en mm, le diaphragme (DP) et la Distance au Sujet (DS) en m.</p>
+				<p>La focale (F), dans les équations doit être en mètre, il faut convertir.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { F_m = {F_{mm} \over 1000 } = {F_{cm} \over 100 } } \]</p>
+				<p>Puis utiliser le F<sub>m</sub>.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { A = {F^2 \times DS \over F^2 + (E \times DP \times (DS-F))} } \]</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { B = {F^2 \times DS \over F^2 - (E \times DP \times (DS-F))} } \]</p>
+				<p>C'est le cas le plus utilisé, car on ne s'en rend même pas compte.<br/>
+				L'appareil fait tout tout seul avec le bip de l'autofocus (AF).</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Faire le point et diaphragme</h3>
+				<p>Calcul de la <b>distance de mise au point</b>, on dit aussi <b>Distance au Sujet (DS)</b>, parfois aussi noté S.<br/>
+				Connaissant les limites <b>A</b> et <b>B</b>, exprimées en mètre, nous cherchons à calculer <b>DS</b>.<br/>
+				Via la formule&nbsp;:</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { DS =  {2 \times A \times B \over A + B } } \]</p>
+				
+				<p>Calcul du diaphragme nécessaire (DP).<br/>
+				Connaissant Les limites <b>A</b> et <b>B</b>, et la focale <b>F</b>.<br/>
+				<b>E (diamètre du cercle de confusion)</b> vaut par défaut <b>0.000033m</b> sauf si vous connaissez sa valeur.</p>
+				<P>\[ \bbox[LightYellow,border:1px solid red, 10px] { DP =  { F^2 \times (B - A) \over E \times ((2 \times  A \times  B) - (F \times (A + B)) } } \]</p>
+				<p>En studio, on va calculer la distance DS, car on veut le sujet dans la zone de netteté.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Déductions issues des calculs ci-dessus</h3>
+				<p>On déduit de façon évidente la taille de la <b>zone de neteté (zn)</b> (Profondeur de Champ PdC).</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { zn =  { B - A } } \]</p>
+				
+				<p>On déduit de façon évidente la taille de la <b>zone de neteté antérieure (zna)</b>.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { zna =  { DS - A } } \]</p>
+				
+				<p>On déduit de façon évidente la taille de la <b>zone de neteté posterieure (znp)</b>.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { znp =  { B - DS } } \]</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Point d'attention</h3>
+				<p>C'est bien, sauf qu'il faut faire très attention avec l'optique et le capteur.<br/>
+				&#128293; Le problème se pose si mon capteur est un APS-C et que je monte une focale non APS-C.<br/>
+				Par exemple mettre une optique EF sur un Canon dont le standard et EF-S, il faut appliquer le facteur de 1.6.<br/>
+				&#10071; La focale (F) n'est plus 50mm mais devient 50x1.6 = 80mm. F vaut 80 et pas 50.<br/>
+				&#10071; Attention aussi avec les objectifs macro ou ceux avec position macro.</p>
+				
+				<p>Amusons-nous avec cela.<br/>
+				&#128073; Je monte un objectif EF de 50mm sur un APS-C, ma nouvelle focale est donc 80mm.<br/>
+				Comment revenir à 50 ?</p>
+				<p>Avec une bonnette.</p>
+				<p>\[ d_o = {1000 \over 80 } = 12.5 \]</p>
+				<p>\[ d_v = {1000 \over 50 } = 20 \]</p>
+				<p>\[ d_v - d_o = 20 - 12.5 = 7.5 \]</p>
+				<p>Il nous faudrait une bonnette de dioptrie +7.5 pour revenir à un 50mm.</p>
+				<p>Sachant que les bonnettes sont en générale de +1, +2, +3, +4, +5 dioptrie,
+				et qu'il n'est pas conseillé de les cumuler, au mieux on prend la +5 et on recalcule.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h2  id="Hyperfocale">Calculs pour l'hyperfocale</h2>
+				
+				<h3>Schéma explicatif l'Hyperfocale</h3>
+				<p>Le schéma explicatif, pour voir que H = DS.</p>
+				<div class="center"><!-- Dessin généré par Visio -->
+					<img src="../../images/hf.svg" alt="Schéma représentant les distances pour l'hyperfocale">
+				</div><!-- Fin Dessin généré par Visio -->
+				<p>En dessous de la Limite Anterieure (A), la zone est floue.<br/>
+				Au-dela de la Limite Anterieure (A), la zone est nette.<br/>
+				Le point se fait à la Distance de mise au point (DS), là ou doit se trouve le sujet.<br/>
+				C'est là aussi que se trouve l'hyperfocale (H).</p>
+				<p>Si on connait le diamètre du cercle de confusion (E) de l'optique alors on l'utilise, sinon on prend la valeur standard.</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Calculs</h3>
+				<p>Calcul de la distance Hyperfocale (H). Connaissant la focale (F) et le diaphragme (DP).</p>
+				<p>La focale (F), dans les équations doit être en mètre, il faut convertir.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { F_m = {F_{mm} \over 1000 } = {F_{cm} \over 100 } } \]</p>
+				<p>Puis utiliser le F<sub>m</sub>.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { H = { {F^2 \over E \times DP } + F } } \]</p>
+				
+				<p>Calcul de la Limite antérieure (A) de netteté par rapport à l'hyperfocale.</p>
+				<p>\[ A = { H \over 2 } \]</p>
+				<p>On déduit de façon évidente la taille de la zone de neteté antérieure.</p>
+				<p>\[ PdC_a =  { A } \]</p>
+				
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Calcul du Diaphragme (DP) pour l'Hyperfocale.</h3>
+				<p>Pour la distance au sujet (DS), comme nous sommes en hyperfocale, alors :</p>
+				<p>\[ DS = { 2 \times A } \]</p>
+				<p>Comme H = DS, on va calculer facilement.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { DP = { F^2 \over E \times (H - F) } } \]</p>
+				<p>Si on ne veut pas H, mais A.<br/>
+				On récupère alors A via une formule précédente. On choisi la Limite Anterieure (A).</p>
+				<p>\[ H = { 2 \times A } \]</p>
+				<p>La formule devient :</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { DP = { F^2 \over E \times ((2 \times A) - F) } } \]</p>
+				<p>Comme on calcul le diaphragme, l'appareil doit être réglé en priorité ouverture.</p>
+				<br/><div class="center"><a href="#">haut de page</a></div>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Champ couvert et bague allonge">&#128679; Champ couvert et bague allonge &#128679;</h2>
+				<p>Pour une prise de vue précise d’un objet dont on connaît bien les dimensions.</p>
+				<br/><div class="center"><a href="#">haut de page</a></div>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2>...</h2>
+				<p>...</p>
+				<div class="center"><a href="#">haut de page</a></div>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Macro">&#128679; Macro et Proxiphotographie &#128679;</h2>
+				
+				<h3>Principe</h3>
+				<p> &#128027; &#128028;   &#128029;   &#128030;  &#128064;  </p>
+				
+				<hr class="hr66">
+				
+				<h3>Profondeur de champ</h3>
+				<p>Le calcul de la profondeur de champ en macro est différent.
+				La focale de l’objectif n’a aucune importance ici, seuls comptent le grandissement et le diaphragme utilisés.</p>
+				<p>Formule pour calculer la PdC.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { PdC = { 2 \times DP \times E \times { {(G+1)} \over G^2 } } } \]</p>
+				<p>Formule pour calculer le diaphragme.</p>
+				<p>\[ \bbox[LightYellow,border:1px solid red, 10px] { DP = { {PdC \times G^2} \over { 2 \times E \times (G+1) } } } \]</p>
+				
+				<hr class="hr66">
+				
+				<h3>Le grandissement G</h3>
+				<p>...</p>
+				
+				<hr class="hr66">
+				
+				<h3>Bonettes d'approche</h3>
+				<p>Voir ci-dessus la partie <a href="#Bonnette">bonnette</a> dans la partie Objectif.</p>
+				
+				<hr class="hr66">
+				
+				<h3>Extension du tirage</h3>
+				<p>...</p>
+				<br/><div class="center"><a href="#">haut de page</a></div>
+			</section>
+			<!-- ---------------------------------------------------------------------- -->
+			<footer>
+				<h1>___</h1>
+			</footer>
+			<!-- ---------------------------------------------------------------------- -->
+		</div>
+		<!-- ---------------------------------------------------------------------- -->
+	</body>
+	<script src="../../js/listh2.js"></script>
+</html>

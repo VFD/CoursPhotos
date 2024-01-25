@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<!-- ---------------------------------------------------------------------- -->
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../css/w3.css">
+		<link rel="stylesheet" type="text/css" href="../../css/default.css" media="all">
+		<title>Calculs</title>
+	</head>
+	<!-- ---------------------------------------------------------------------- -->
+	<!-- ---------------------------------------------------------------------- -->
+	<body>
+		<br/>
+		<!-- ---------------------------------------------------------------------- -->
+		<div class="sidenav">
+			<input type="text" id="mySearch" onkeyup="myFunctionH2()" placeholder="Chercher..." title="Commencer à taper et choisissez">
+			<ul id="myMenu"></ul>
+		</div>
+		<!-- ---------------------------------------------------------------------- -->
+		<div class="main">
+			<!-- ---------------------------------------------------------------------- -->
+			<header>
+				<h1>Atelier Photo Vidéo<br/>Calculs</h1>
+				<nav>
+					<script src="../../js/menu3.js"></script></nav>
+				<hr>
+				<p class="w3-center w3-wide">Issue de la pages de maths.<br/>Tous les formulaires de calculs</p>
+				<hr>
+			</header>
+			<!-- ---------------------------------------------------------------------- -->
+
+			<section id="calculs">
+				<h1>Calculs divers pour la photographie</h1>
+				<p>Cette page utilise le principe de MathML pour l'affichage des formules.<br/>
+				Non testé en mode hors connexion.</p>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Capteur">Capteur et focale standard</h2>
+				<h3>Calcul de la diagonale pour obtenir la focale standard</h3>
+				<!-- ---------------------------------------------------------------------- -->
+				<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+					<!-- <mstyle style="border:1px solid red" mathbackground="LightYellow"> --> <!-- pose pb -->
+						<mpadded height="+10px" depth="+10px" lspace="10px" width="+20px">
+						<msub>
+							<mi>d</mi>
+							<mi>c</mi>
+						</msub>
+						<mo>=</mo>
+						<mrow>
+							<msqrt>
+								<mi>L</mi>
+								<msup>
+									<mi>a</mi>
+									<mn>2</mn>
+								</msup>
+								<mo>+</mo>
+								<mi>L</mi>
+								<msup>
+									<mi>o</mi>
+									<mn>2</mn>
+								</msup>
+							</msqrt>
+						</mrow>
+						</mpadded>
+					<!-- </mstyle> -->
+				</math>
+				<!-- ---------------------------------------------------------------------- -->
+				<p>Le calcul est très simple, vous pouvez entrer vos valeurs dans la table ci-dessous.</p>
+				<table style="margin:auto;">
+					<tbody>
+						<tr>
+							<th>Largeur du capteur (La)</th>
+							<td><input id="largeurC" type="text"> mm</td>
+						</tr>
+						<tr>
+							<th>Longueur du capteur (Lo)</th>
+							<td><input id="longueurC" type="text"> mm</td>
+						</tr>
+						<tr>
+							<th>Focale standard (F)</th>
+							<td><span id="focaleC">?</span> mm</td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<div class="w3-center">
+					<input value="Calculer" onclick="calculFocale();" type="button">
+				</div>
+				<br/>
+				<div class="w3-center"><a href="#">haut de page</a></div>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Objectif">Calcul focale Objectif</h2>
+				<h3>Calcul de puissance en dioptrie d'une focale</h3>
+				<!-- ---------------------------------------------------------------------- -->
+				<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+					<!-- <mstyle style="border:1px solid red" mathbackground="LightYellow"> --> <!-- pose pb -->
+						<mpadded height="+10px" depth="+10px" lspace="10px" width="+20px">
+							<mi>d</mi>
+							<mo>=</mo>
+							<mrow>
+								<mfrac>
+								<mn>1000</mn>
+								<mi>F</mi>
+								</mfrac>
+							</mrow>
+						</mpadded>
+					<!-- </mstyle> -->
+				</math>
+				<br/>
+				<!-- ---------------------------------------------------------------------- -->
+				<table style="margin:auto">
+					<tbody>
+						<tr>
+							<th>Focale (F)</th>
+							<td><input id="focalep" type="text"> mm</td>
+						</tr>
+						<tr>
+							<th>Puissance focale (d)</th>
+							<td><span id="focaledp">?</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<div class="w3-center">
+					<input value="Calculer" onclick="puissanceFocale();" type="button">
+				</div>
+				<hr class="hr66">
+				<!-- ---------------------------------------------------------------------- -->
+				<h3>Calcul de la nouvelle focale d'un objectif associé à une bonnette</h3>
+				<p>To do : ajout formule</p>
+				<table style="margin:auto">
+					<tbody>
+						<tr>
+							<th>Focale</th>
+							<td><input id="focaledb" type="text">&nbsp;mm</td>
+						</tr>
+						<tr>
+							<th>Dioptrie Bonnette</th>
+							<td><input id="dioptrieBonnette" type="text">&nbsp;d</td>
+						</tr>
+						<tr>
+							<th>Focale et bonnette</th>
+							<td><span id="focaleBonnette">?</span>&nbsp;mm</td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<div class="w3-center">
+					<input value="Calculer" onclick="calculFocaleBonnette();" type="button">
+				</div>
+				<br/>
+				<!-- ---------------------------------------------------------------------- -->
+				<div class="w3-center"><a href="#">haut de page</a></div>
+				<hr>
+				<!-- ---------------------------------------------------------------------- -->
+				<h2 id="Profondeur de champ et Hyperfocale">Profondeur de champ et Hyperfocale</h2>
+				<h3>Profondeur de champ</h3>
+				<p>Pour rappel, vous pouvez consulter le cours sur la profondeur de champs.</p>
+				<p>to do : table</p>
+				<h3>Hyperfocale</h3>
+				<p>Pour rappel, vous pouvez consulter le cours sur l'hyperfocale.</p>
+				<div class="w3-center"><a href="#">haut de page</a></div>
+			</section>
+			<!-- ---------------------------------------------------------------------- -->
+			<footer>
+			<h1>___</h1>
+			</footer>
+			<br/>
+		</div>
+	</body>
+	<!-- ---------------------------------------------------------------------- -->
+	<script src="../../js/listh2.js"></script>
+	<!-- ---------------------------------------------------------------------- -->
+	<script>
+	function calculFocale() {
+		//alert("Work in progress");
+		var largeur = parseInt(document.getElementById('largeurC').value);
+		var longueur = parseInt(document.getElementById('longueurC').value);
+		document.getElementById("focaleC").innerHTML =
+		Math.round(100*(Math.sqrt((largeur*largeur)+(longueur*longueur))))/100;
+	}
+
+	function puissanceFocale() {
+		var focale = parseInt(document.getElementById('focalep').value);
+		document.getElementById("focaledp").innerHTML = 1000/focale;
+	}
+
+	function calculFocaleBonnette() {
+		var puissanceFocale = 1000/parseInt(document.getElementById('focaledb').value);
+		document.getElementById("focaleBonnette").innerHTML = Math.round(100*(1000 / (parseInt(document.getElementById('dioptrieBonnette').value) +  puissanceFocale ) ))/100;
+	}
+	</script>
+
+</html>
