@@ -17,7 +17,7 @@
 			<!-- Chemin de fer -->
 			<!-- ---------------------------------------------------------------------- -->
 			<hr class="hr66">
-			<p class="w3-center"><a href="../../index.html">&#127968;</a> &rarr; ...</p>
+			<p class="w3-center"><a href="../../index.html">Accueil</a> &rarr; <a href="../cours.html">Cours</a> &rarr; <a href="basesphotos.html">Les Bases</a> &rarr; Le capteur</p>
 			<hr/>
 		</header>
 		<!-- ---------------------------------------------------------------------- -->
@@ -30,30 +30,76 @@
 			Les plan film sont utilisés dans les chambres photographiques.
 		</p>
 		<p>Le film est constitué d'un film plastique transparent sur lequel vient une couche chimique (gélétine) à base d'argent.</p>
+		<div class="w3-center">
+			<img src="pellicules.jpg" alt="pellicules" title="Un lot de pellicules photos" width="500">
+		</div>
+		<p>Il existe et il a existé nombre de procédés (historique, ancien, moderne).<br/>
+		consulter la <a href="histoire.html">page histoire</a>.</p>
 		<div class="w3-center w3-small"><a href="#">haut de page</a></div>
 		<hr>
 		<!-- ---------------------------------------------------------------------- -->
 		<h2>Le capteur numérique</h2>
 			<h3>Rappel</h3>
-			<p>Le capteur numérique a été inventé dans les années 1970 par Kodak.<br/>
+			<p>Le capteur numérique a été inventé vers la fin des années 1970 par <b>Kodak</b>
+			(<b>Steven J. Sasson</b>, ingénieur électricien, chercheur au <b>Kodak Apparatus Division Research Laboratory</b>).<br/>
+			Le brevet est daté du 26 décembre 1978.<br/>
 			L'avènement des appareils photos numériques c'est fait au début des année 2000.
 			Soit près de 30 ans après.
 			</p>
+			<div class="w3-center">
+				<img src="KodakCapteur.png" alt="Capteur Kodak" title="le capteur Kodak et son inventeur" width="500">
+			</div>
+			<p>Pour information, l'image est enregistrée sur un cassete audio standard.</p>
+			
+
 			<hr class="hr66">
 			<h3>Le capteur</h3>
 			<p>Il est constitué d'une grille de photosites, 4 photosites pour 1 pixel.
-				Les photosites ne capte qu'une quantité N de lumière réfléchie (plus raremen incidente).
+				Les photosites ne capte qu'une quantité N de lumière réfléchie (plus rarement de la lumière incidente, soleil, ampoule, etc.).
 				Ce qui va permettre de créer la couleur, c'est la matrice de Bayer.
 			</p>
 			<hr class="hr66">
 			<h3>La matrice de Bayer</h3>
-			<p>C'est une grille qui vient par-dessus le capteur. Pour chaque photosite, il y a 4 filtres.
-				Deux filtres vert, un rouge et un bleu.
+			<p>C'est une grille qui vient par-dessus le capteur.<br/>
+				Pour chaque photosite, il y a 4 filtres.
+				Deux filtres vert, un rouge et un bleu.<br/>
 				Ceci va permettre de reconstituer la couleur.
 			</p>
-			<div>
-				<p>schéma to do</p>
+			<div class="w3-center">
+				<svg width="200" height="120">
+					<title>Matrice de Bayer</title>
+					<desc>Dessin d'une matrice de bayer simplifiée (5x5)</desc>
+					<defs>
+						<g id="photosite">
+							<desc>4 photosites</desc>
+							<rect x="0" y="10" width="10" height="10" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" />
+							<rect x="10" y="10" width="10" height="10" style="fill:rgb(255,0,0);stroke-width:1;stroke:rgb(0,0,0)" />
+							<rect x="0" y="0" width="10" height="10" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+							<rect x="10" y="0" width="10" height="10" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" />
+						</g>
+						<g id="colonne">
+							<desc>Colonne de 5</desc>
+							<use xlink:href="#photosite" x="0" y="0"/>
+							<use xlink:href="#photosite" x="0" y="20"/>
+							<use xlink:href="#photosite" x="0" y="40"/>
+							<use xlink:href="#photosite" x="0" y="60"/>
+							<use xlink:href="#photosite" x="0" y="80"/>
+						</g>
+						<g id="bayer">
+							<desc>5 colonnes</desc>
+							<use xlink:href="#colonne" x="0" y="0"/>
+							<use xlink:href="#colonne" x="20" y="0"/>
+							<use xlink:href="#colonne" x="40" y="0"/>
+							<use xlink:href="#colonne" x="60" y="0"/>
+							<use xlink:href="#colonne" x="80" y="0"/>
+						</g>
+					</defs>
+					<use xlink:href="#bayer" x="50" y="0"/>
+					<text x="100" y="115" style="text-anchor:middle">Matrice de bayer</text>
+				</svg>
 			</div>
+			<p>Nous pouvons constater qu'il y aura deux fois plus de vert que de rouge ou de bleu.</p>
+			<hr class="hr66">
 		<div class="w3-center w3-small"><a href="#">haut de page</a></div>
 		<hr>
 		<!-- ---------------------------------------------------------------------- -->
