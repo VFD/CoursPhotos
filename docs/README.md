@@ -2,7 +2,7 @@
 
 Répertoires contenant un ensemble de documents utiles.\
 Soit des documents anciens scannés car de toute manière introuvable.\
-Soit des documents créé de toute pièce.
+Soit des documents créé de toute pièce.\
 Et parfois les deux, tentative de création à neuf d'un document ancien pour le rendre plus utilisable dans notre monde dit moderne.
 
 ___

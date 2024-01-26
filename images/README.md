@@ -8,18 +8,17 @@ Si l'image est spécifique à un cours elle est alors dans le répertoire du cou
 
 ## Source des images
 
-Soit les images sont crées spécifiquement via des logiciels dédiés, voir utilisation d'une IA générative.
-Soit elle sont issue de plateforme et doivent obligatoirement être libre d'utilisation.
-
-Il est nécessaire de citer les sources.
+La plupart des images sont crées spécifiquement via des logiciels dédiés, voir utilisation d'une IA générative.
+Parfois trouver sur le Web, et souvent nous n'avons pas lés référence des auterus (nous sommes prenneurs).
 
 ## Cas particulier
 
 ### Images issue d'un livre
 
 Il est possible d'utiliser une reproduction partiel d'un livre dans le cadre d'une formation.
-Ce qui est le cas ici.
-
-Il est obligatoire de donner les référence du livre.
-
+Ce qui est le cas ici.\
 La raçon du succès fait que certain prix de livre en occasion sont prohibitifs.
+
+___
+&#128679; en cours de création, donc très incomplet. &#128679;
+___
