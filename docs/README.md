@@ -3,7 +3,7 @@
 Répertoires contenant un ensemble de documents utiles.\
 Soit des documents anciens scannés car de toute manière introuvable.\
 Soit des documents créé de toute pièce.
-
+Et parfois les deux, tentative de création à neuf d'un document ancien pour le rendre plus utilisable dans notre monde dit moderne.
 
 ___
 
@@ -27,6 +27,6 @@ Source du document inconnue, refait en Excel.
 
 ___
 
-NB : les sytème est en cours de création, donc très incomplet.
+&#128679; Travail en cours &#128679;
 
 ___
