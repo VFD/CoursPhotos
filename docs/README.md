@@ -1,7 +1,7 @@
 # Les documents
 
 Répertoires contenant un ensemble de documents utiles.\
-Soit des docuents anciens scannés car de toute manière introuvable.\
+Soit des documents anciens scannés car de toute manière introuvable.\
 Soit des documents créé de toute pièce.
 
 
@@ -20,6 +20,10 @@ Il faudrait retrouver les sources et mettre à jour.
 ### Correspondances ouverture
 
 Fichier Excel.\
+Correspondance des ouvertures sur plusieurs marque de fabricants d'objectif./
+La norme actuelle n'a pas toujours été celle utilisé./
+Source du document inconnue, refait en Excel.
+
 
 ___
 
